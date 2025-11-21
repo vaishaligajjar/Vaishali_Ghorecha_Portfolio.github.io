@@ -1,0 +1,66 @@
+<!doctype html>
+<div class="card">
+<h3>Sales Dashboard (Power BI)</h3>
+<p>Interactive dashboard with sales KPIs, monthly trends and top customer segments. Cleaned and transformed data from CSV and SQL.</p>
+<a href="#" target="_blank">View on GitHub</a>
+</div>
+
+
+<div class="card">
+<h3>Customer Churn Prediction</h3>
+<p>End-to-end ML pipeline: feature engineering, model training, evaluation and deployment using Streamlit for demo.</p>
+<a href="#" target="_blank">View on GitHub</a>
+</div>
+
+
+<div class="card">
+<h3>SQL Analytics Case Study</h3>
+<p>Complex SQL queries, window functions and performance tuning on a production-like data model. Includes documented README.</p>
+<a href="#" target="_blank">View on GitHub</a>
+</div>
+</div>
+</section>
+
+
+<section class="contact">
+<h2>Contact</h2>
+<form onsubmit="event.preventDefault(); window.location='mailto:youremail@example.com?subject=Portfolio%20Contact&body='+encodeURIComponent('Name: '+name.value+'\nMessage: '+message.value)">
+<input id="name" placeholder="Your name" required>
+<input id="email" placeholder="Your email" type="email" required>
+<textarea id="message" rows="3" placeholder="What would you like to discuss?" required></textarea>
+<div style="flex-basis:100%; display:flex; justify-content:flex-end">
+<button type="submit">Send</button>
+</div>
+</form>
+</section>
+
+
+</main>
+
+
+<footer>
+<div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap">
+<div>© <span id="year">2025</span> Your Name — Data Science Portfolio</div>
+<div style="color:var(--muted)">Find me on GitHub • LinkedIn</div>
+</div>
+</footer>
+
+
+<script>
+// Quick script to set your info once. Replace values or update from a small JSON object.
+const DATA = {
+name: 'Vaishali Gajjar',
+role: 'Entry Level Data Scientist',
+about: "I recently completed a Full Stack Data Science & Analytics program. I build data-driven solutions using Python, SQL and Power BI. I'm passionate about turning data into actionable insights.",
+email: 'youremail@example.com',
+photo: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder'
+}
+document.getElementById('fullname').innerText = DATA.name
+document.getElementById('role').innerText = DATA.role
+document.getElementById('about').innerText = DATA.about
+document.querySelector('.cta').href = 'mailto:'+DATA.email
+document.querySelector('.hero-photo').src = DATA.photo
+document.getElementById('year').innerText = new Date().getFullYear()
+</script>
+</body>
+</html>
